@@ -52,17 +52,17 @@ const Form = () => {
     return (
         <form onSubmit={handleSubmit}>
             <div>
-                <label>Email:</label>
-                <input type="email" value={email} onChange={handleEmailChange} onBlur={validateEmail} style={{ border: emailValidated ? '2px solid green' : '2px solid red' }}/>
+                <label>Email: </label>
+                <input type="email" value={email} onChange={handleEmailChange} onBlur={validateEmail} style={{ border: emailValidated ? '2px solid green' : '2px solid red' }} placeholder='Enter Email Address' required/>
             </div>
             <div>
-                <label>Password:</label>
+                <label>Password: </label>
                 <input type="password" value={password} onChange={handlePasswordChange} onBlur={validatePassword}
-                style={{ border: passwordValidated ? '2px solid green' : '2px solid red' }} />
+                style={{ border: passwordValidated ? '2px solid green' : '2px solid red' }} placeholder='Enter Password' required/>
             </div>
             <div>
-                <label>Confirm Password:</label>
-                <input type="password" value={confirmPassword} onChange={handleConfirmPasswordChange} onBlur={validateConfirmPassword} style={{ border: confirmPasswordValidated ? '2px solid green' : '2px solid red' }}/>
+                <label>Confirm Password: </label>
+                <input type="password" value={confirmPassword} onChange={handleConfirmPasswordChange} onBlur={validateConfirmPassword} style={{ border: confirmPasswordValidated ? '2px solid green' : '2px solid red' }} placeholder='Enter Password' required/>
             </div>
             <button type="submit">Submit</button>
         </form>
